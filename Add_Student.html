@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Add Student</title>
+</head>
+<body bgcolor="#add" >
+<table align="center">
+<caption><h1><u>ADD STUDENT</u><h1></caption>
+<br/><br/>
+<form  method="POST" action="http://localhost/mywork/student_pdbms/insert.php">
+<!--Create first row-->
+     <tr>
+	       <td><b>Registration No:-</b></td>
+		   <td><input type="number" name="rno"/>
+	 </tr>
+	 <br/>
+<!-- Create the second row -->
+	<tr>
+		<td> <b>Student Name: </b> </td>
+		<td> <input type = "text"  name="name"/> </td>
+	</tr>
+	<!-- Create the third row -->
+	<tr>
+	     <td><b>Stream</b></td>
+		 <td>
+		     <select name = "stream">
+			<option name = "defualt">Select</option>
+			<option name = "CE">CE </option>
+			<option name = "ME">ME</option>
+			<option name = "EEE">EEE</option>
+			<option name = "ECE">ECE</option>
+			<option name = "CSE">CSE</option>
+			</select>	
+		</td>
+	</tr>
+	<!-- create fourth row -->
+	<tr>
+		<td> <b>Contact Number: </b> </td>
+		<td> <input type = "number" name="contact" /> </td>
+	</tr>
+	<!-- Create the fifth row -->
+	<tr>
+		<td> <b>Email: </b> </td>
+		<td> <input type = "text" name="email" /> </td>
+	</tr>
+	<tr>
+	       <td align="center" colspan="2"><input type="submit" value="Add"/><td/>
+	 </tr>
+</form>
+</table>
+</body>
+</html>
